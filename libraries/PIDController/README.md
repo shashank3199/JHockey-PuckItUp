@@ -104,19 +104,19 @@ For coupled XY control, the algorithm calculates corrections for both axes indep
 
 For X-axis:
 
-$e_x(t) = \text{setpointX} - \text{measuredX}$
-$P_x(t) = K_p \cdot e_x(t)$
-$D_x(t) = K_d \cdot (e_x(t) - e_x(t-1))$
-$I_{accum,x}(t) = e_x(t) \cdot \text{accFactorPresent} + I_{accum,x}(t-1) \cdot \text{accFactorPast}$
-$I_x(t) = K_i \cdot I_{accum,x}(t)$
-$\text{rawCorrX} = P_x(t) + I_x(t) + D_x(t)$
+$$e_x(t) = \text{setpointX} - \text{measuredX}$$
+$$P_x(t) = K_p \cdot e_x(t)$$
+$$D_x(t) = K_d \cdot (e_x(t) - e_x(t-1))$$
+$$I_{accum,x}(t) = e_x(t) \cdot \text{accFactorPresent} + I_{accum,x}(t-1) \cdot \text{accFactorPast}$$
+$$I_x(t) = K_i \cdot I_{accum,x}(t)$$
+$$\text{rawCorrX} = P_x(t) + I_x(t) + D_x(t)$$
 
 Similar equations apply for the Y-axis.
 
 The combined speed magnitude is calculated as:
 
-$\text{speed} = \sqrt{(\text{rawCorrX})^2 + (\text{rawCorrY})^2}$
-$\text{constrainedSpeed} = \text{constrain}(\text{speed}, 0, \text{maxSpeed})$
+$$\text{speed} = \sqrt{(\text{rawCorrX})^2 + (\text{rawCorrY})^2}$$
+$$\text{constrainedSpeed} = \text{constrain}(\text{speed}, 0, \text{maxSpeed})$$
 
 Pseudocode:
 

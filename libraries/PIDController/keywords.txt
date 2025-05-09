@@ -1,0 +1,5 @@
+PIDController		KEYWORD1
+PIDMode				KEYWORD1
+getCorrection		KEYWORD2
+setGains			KEYWORD2
+resetIntegral		KEYWORD2

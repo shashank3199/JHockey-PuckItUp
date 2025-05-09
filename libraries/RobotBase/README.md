@@ -85,8 +85,7 @@ $$
 v_x \\
 v_y \\
 \omega
-\end{bmatrix}
-=
+\end{bmatrix} = 
 \begin{bmatrix}
 -0.5 & -0.5 & 1 \\
 \frac{\sqrt{3}}{2} & -\frac{\sqrt{3}}{2} & 0 \\
@@ -110,8 +109,7 @@ $$
 v1 \\
 v2 \\
 v3
-\end{bmatrix}
-=
+\end{bmatrix} =
 \frac{1}{3}
 \begin{bmatrix}
 -1 & \sqrt{3} & 1 \\
